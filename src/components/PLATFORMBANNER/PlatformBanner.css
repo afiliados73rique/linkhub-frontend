@@ -1,0 +1,40 @@
+.platform-banner {
+  background: var(--cor-texto);
+  color: white;
+  text-align: center;
+  border-radius: var(--raio-borda);
+  margin: 0 8%;
+  padding: 60px 40px;
+}
+
+.platform-banner h2 {
+  font-size: 1.8rem;
+  margin-bottom: 32px;
+}
+
+.plataformas-lista {
+  display: flex;
+  justify-content: center;
+  gap: 24px;
+  flex-wrap: wrap;
+}
+
+.plataforma-item {
+  display: flex;
+  align-items: center;
+  gap: 12px;
+  background: rgba(255, 255, 255, 0.08);
+  padding: 16px 28px;
+  border-radius: var(--raio-borda-pequeno);
+  transition: var(--transicao);
+}
+
+.plataforma-item:hover {
+  background: var(--gradiente-principal);
+  transform: translateY(-4px);
+}
+
+.plataforma-item img {
+  width: 28px;
+  height: 28px;
+}

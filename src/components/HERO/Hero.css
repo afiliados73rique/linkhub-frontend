@@ -1,0 +1,52 @@
+.hero {
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+  gap: 60px;
+  min-height: 80vh;
+  background: var(--gradiente-suave);
+  position: relative;
+  overflow: hidden;
+}
+
+.hero::before {
+  content: '';
+  position: absolute;
+  top: -20%;
+  right: -10%;
+  width: 500px;
+  height: 500px;
+  background: var(--gradiente-principal);
+  border-radius: 50%;
+  opacity: 0.15;
+  filter: blur(60px);
+}
+
+.hero-texto {
+  flex: 1;
+  z-index: 1;
+}
+
+.hero-texto h1 {
+  font-size: 3.2rem;
+  margin-bottom: 20px;
+}
+
+.hero-texto h1 .destaque {
+  background: var(--gradiente-principal);
+  -webkit-background-clip: text;
+  background-clip: text;
+  -webkit-text-fill-color: transparent;
+}
+
+.hero-texto p {
+  font-size: 1.15rem;
+  color: var(--cor-texto-suave);
+  max-width: 480px;
+}
+
+.hero-imagem {
+  flex: 1;
+  border-radius: var(--raio-borda);
+  box-shadow: var(--sombra-forte);
+}

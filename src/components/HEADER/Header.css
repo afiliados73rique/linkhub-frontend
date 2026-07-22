@@ -1,0 +1,48 @@
+.header {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  padding: 20px 8%;
+  position: sticky;
+  top: 0;
+  background: rgba(255, 255, 255, 0.8);
+  backdrop-filter: blur(10px);
+  z-index: 100;
+  border-bottom: 1px solid var(--cor-borda);
+}
+
+.header .logo {
+  font-size: 1.6rem;
+  font-weight: 800;
+  background: var(--gradiente-principal);
+  -webkit-background-clip: text;
+  background-clip: text;
+  -webkit-text-fill-color: transparent;
+}
+
+.header nav {
+  display: flex;
+  gap: 32px;
+}
+
+.header nav a {
+  font-weight: 600;
+  color: var(--cor-texto);
+  position: relative;
+  transition: var(--transicao);
+}
+
+.header nav a::after {
+  content: '';
+  position: absolute;
+  bottom: -4px;
+  left: 0;
+  width: 0;
+  height: 2px;
+  background: var(--gradiente-principal);
+  transition: var(--transicao);
+}
+
+.header nav a:hover::after {
+  width: 100%;
+}

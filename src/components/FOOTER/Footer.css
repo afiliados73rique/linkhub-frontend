@@ -1,0 +1,47 @@
+.footer {
+  background: var(--gradiente-principal);
+  color: white;
+  padding: 60px 8% 30px;
+}
+
+.footer-logo {
+  font-size: 1.6rem;
+  font-weight: 800;
+  margin-bottom: 12px;
+}
+
+.footer p {
+  color: rgba(255, 255, 255, 0.85);
+  max-width: 400px;
+}
+
+.footer-links {
+  display: flex;
+  gap: 60px;
+  margin-top: 40px;
+}
+
+.footer-links h4 {
+  margin-bottom: 12px;
+}
+
+.footer-links a,
+.footer-links p {
+  display: block;
+  color: rgba(255, 255, 255, 0.8);
+  margin-bottom: 8px;
+  transition: var(--transicao);
+}
+
+.footer-links a:hover {
+  color: white;
+  padding-left: 4px;
+}
+
+.footer-copy {
+  margin-top: 50px;
+  padding-top: 20px;
+  border-top: 1px solid rgba(255, 255, 255, 0.2);
+  font-size: 0.85rem;
+  color: rgba(255, 255, 255, 0.6);
+}
