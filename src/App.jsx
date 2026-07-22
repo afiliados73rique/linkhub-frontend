@@ -1,19 +1,25 @@
-import Header from './components/HEADER/Header'
-import Hero from './components/HERO/Hero'
-import PlatformBanner from './components/PLATFORMBANNER/PlatformBanner'
-import ProdutosList from './components/PRODUTOLIST/ProdutosList'
-import Footer from './components/FOOTER/Footer'
-
+import { BrowserRouter, Routes, Route } from 'react-router-dom'
+import Home from './pages/Home/Home'
+import Login from './pages/Login/Login'
+import Admin from './pages/Admin/Admin'
+import RotaProtegida from './components/RotaProtegida/RotaProtegida'
 
 function App() {
   return (
-    <>
-      <Header />
-      <Hero />
-      <PlatformBanner />
-      <ProdutosList />
-      <Footer />
-    </>
+    <BrowserRouter>
+      <Routes>
+        <Route path="/" element={<Home />} />
+        <Route path="/login" element={<Login />} />
+        <Route
+          path="/admin"
+          element={
+            <RotaProtegida>
+              <Admin />
+            </RotaProtegida>
+          }
+        />
+      </Routes>
+    </BrowserRouter>
   )
 }
 

@@ -1,28 +1,28 @@
 :root {
-  /* Paleta principal - roxo/violeta com gradiente */
-  --cor-primaria: #7c3aed;
-  --cor-primaria-clara: #a78bfa;
-  --cor-primaria-escura: #5b21b6;
-  --cor-acento: #f472b6;
+  /* Paleta principal - azul como base, amarelo como acento */
+  --cor-primaria: #1e40af;
+  --cor-primaria-clara: #3b82f6;
+  --cor-primaria-escura: #172554;
+  --cor-acento: #facc15;
 
   /* Neutros */
-  --cor-texto: #1e1b2e;
-  --cor-texto-suave: #6b7280;
+  --cor-texto: #0f172a;
+  --cor-texto-suave: #64748b;
   --cor-fundo: #ffffff;
-  --cor-fundo-suave: #faf9fc;
-  --cor-borda: #e5e0f0;
+  --cor-fundo-suave: #f8fafc;
+  --cor-borda: #e2e8f0;
 
   /* Gradiente assinatura da marca */
-  --gradiente-principal: linear-gradient(135deg, #7c3aed 0%, #a855f7 50%, #f472b6 100%);
-  --gradiente-suave: linear-gradient(135deg, #f5f3ff 0%, #fdf4ff 100%);
+  --gradiente-principal: linear-gradient(135deg, #1e3a8a 0%, #1e40af 50%, #2563eb 100%);
+  --gradiente-suave: linear-gradient(135deg, #eff6ff 0%, #f0f9ff 100%);
 
   /* Sombras */
-  --sombra-suave: 0 4px 20px rgba(124, 58, 237, 0.08);
-  --sombra-media: 0 8px 30px rgba(124, 58, 237, 0.15);
-  --sombra-forte: 0 20px 50px rgba(124, 58, 237, 0.25);
+--sombra-suave: 0 4px 20px rgba(30, 64, 175, 0.1);
+--sombra-media: 0 8px 30px rgba(30, 64, 175, 0.18);
+--sombra-forte: 0 20px 50px rgba(30, 64, 175, 0.28);
 
   /* Espaçamento e formas */
   --raio-borda: 16px;
   --raio-borda-pequeno: 10px;
   --transicao: all 0.3s ease;
-}
+} 

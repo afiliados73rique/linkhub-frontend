@@ -1,0 +1,113 @@
+.modal-overlay {
+  position: fixed;
+  inset: 0;
+  background: rgba(15, 23, 42, 0.6);
+  backdrop-filter: blur(4px);
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  z-index: 1000;
+  padding: 20px;
+}
+
+.modal-form {
+  background: white;
+  padding: 36px;
+  border-radius: var(--raio-borda);
+  box-shadow: var(--sombra-forte);
+  width: 100%;
+  max-width: 500px;
+  max-height: 90vh;
+  overflow-y: auto;
+  display: flex;
+  flex-direction: column;
+}
+
+.modal-form h2 {
+  font-size: 1.4rem;
+  margin-bottom: 24px;
+  color: var(--cor-primaria-escura);
+}
+
+.modal-form label {
+  font-size: 0.85rem;
+  font-weight: 600;
+  color: var(--cor-texto-suave);
+  margin-bottom: 6px;
+  margin-top: 14px;
+}
+
+.modal-form input,
+.modal-form textarea {
+  padding: 10px 14px;
+  border: 1px solid var(--cor-borda);
+  border-radius: var(--raio-borda-pequeno);
+  font-size: 0.95rem;
+  font-family: inherit;
+  transition: var(--transicao);
+}
+
+.modal-form textarea {
+  resize: vertical;
+  min-height: 70px;
+}
+
+.modal-form input:focus,
+.modal-form textarea:focus {
+  outline: none;
+  border-color: var(--cor-primaria);
+  box-shadow: 0 0 0 3px rgba(30, 64, 175, 0.1);
+}
+
+.checkbox-label {
+  flex-direction: row !important;
+  align-items: center;
+  gap: 8px;
+  margin-top: 18px !important;
+}
+
+.checkbox-label input {
+  width: auto;
+}
+
+.form-erro {
+  background: #fef2f2;
+  color: #dc2626;
+  padding: 10px 14px;
+  border-radius: var(--raio-borda-pequeno);
+  font-size: 0.85rem;
+  margin-top: 16px;
+}
+
+.modal-botoes {
+  display: flex;
+  justify-content: flex-end;
+  gap: 12px;
+  margin-top: 24px;
+}
+
+.modal-botoes button {
+  padding: 12px 24px;
+  border-radius: var(--raio-borda-pequeno);
+  font-weight: 700;
+  cursor: pointer;
+  border: none;
+  transition: var(--transicao);
+}
+
+.modal-botoes button[type="button"] {
+  background: var(--cor-fundo-suave);
+  color: var(--cor-texto);
+  border: 1px solid var(--cor-borda);
+}
+
+.modal-botoes button[type="submit"] {
+  background: var(--gradiente-principal);
+  color: white;
+  border-bottom: 3px solid var(--cor-acento);
+}
+
+.modal-botoes button[type="submit"]:disabled {
+  opacity: 0.6;
+  cursor: not-allowed;
+}

@@ -26,11 +26,13 @@
   background: rgba(255, 255, 255, 0.08);
   padding: 16px 28px;
   border-radius: var(--raio-borda-pequeno);
+  border: 1px solid transparent;
   transition: var(--transicao);
 }
 
 .plataforma-item:hover {
-  background: var(--gradiente-principal);
+  background: rgba(250, 204, 21, 0.1);
+  border-color: var(--cor-acento);
   transform: translateY(-4px);
 }
 

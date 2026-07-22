@@ -18,7 +18,7 @@
   background: white;
   border-radius: var(--raio-borda);
   overflow: hidden;
-  box-shadow: var(--sombra-suave);
+  box-shadow: 0 10px 30px rgba(30, 64, 175, 0.12);
   transition: var(--transicao);
   display: flex;
   flex-direction: column;
@@ -26,7 +26,7 @@
 
 .produto-card:hover {
   transform: translateY(-8px);
-  box-shadow: var(--sombra-media);
+  box-shadow: 0 20px 40px rgba(30, 64, 175, 0.22);
 }
 
 .produto-card img {
@@ -54,12 +54,12 @@
 .produto-card .preco {
   font-size: 1.3rem;
   font-weight: 700;
-  color: var(--cor-primaria);
+    color: #ca8a04;
   margin-top: 10px;
 }
 
 .produto-card a {
-  margin: 20px;
+   margin: 20px;
   margin-top: auto;
   background: var(--gradiente-principal);
   color: white;
@@ -67,10 +67,12 @@
   padding: 12px;
   border-radius: var(--raio-borda-pequeno);
   font-weight: 600;
+  border-bottom: 3px solid var(--cor-acento);
   transition: var(--transicao);
 }
 
 .produto-card a:hover {
   filter: brightness(1.1);
   transform: scale(1.02);
+  border-bottom-color: white;
 }

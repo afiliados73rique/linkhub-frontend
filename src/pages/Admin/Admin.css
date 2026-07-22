@@ -1,0 +1,133 @@
+.admin-container {
+  padding: 40px 5%;
+  min-height: 100vh;
+  background: var(--cor-fundo-suave);
+}
+
+.admin-header {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  margin-bottom: 32px;
+}
+
+.admin-header h1 {
+  font-size: 1.8rem;
+}
+
+.btn-novo {
+  background: var(--gradiente-principal);
+  color: white;
+  border: none;
+  padding: 12px 24px;
+  border-radius: var(--raio-borda-pequeno);
+  font-weight: 700;
+  cursor: pointer;
+  border-bottom: 3px solid var(--cor-acento);
+  transition: var(--transicao);
+}
+
+.btn-novo:hover {
+  filter: brightness(1.1);
+  transform: translateY(-2px);
+}
+
+.admin-tabela {
+  width: 100%;
+  border-collapse: collapse;
+  background: white;
+  border-radius: var(--raio-borda);
+  overflow: hidden;
+  box-shadow: var(--sombra-suave);
+}
+
+.admin-tabela thead {
+  background: var(--cor-primaria-escura);
+}
+
+.admin-tabela th {
+  color: white;
+  text-align: left;
+  padding: 16px 20px;
+  font-size: 0.9rem;
+  text-transform: uppercase;
+  letter-spacing: 0.5px;
+}
+
+.admin-tabela td {
+  padding: 14px 20px;
+  border-bottom: 1px solid var(--cor-borda);
+  vertical-align: middle;
+}
+
+.admin-tabela tbody tr:hover {
+  background: var(--cor-fundo-suave);
+}
+
+.admin-thumb {
+  width: 50px;
+  height: 50px;
+  object-fit: cover;
+  border-radius: 8px;
+}
+
+.status-ativo,
+.status-inativo {
+  padding: 4px 12px;
+  border-radius: 20px;
+  font-size: 0.8rem;
+  font-weight: 700;
+}
+
+.status-ativo {
+  background: #dcfce7;
+  color: #16a34a;
+}
+
+.status-inativo {
+  background: #fee2e2;
+  color: #dc2626;
+}
+
+.admin-acoes {
+  display: flex;
+  gap: 8px;
+}
+
+.admin-acoes button {
+  border: 1px solid var(--cor-borda);
+  background: white;
+  padding: 6px 14px;
+  border-radius: var(--raio-borda-pequeno);
+  font-size: 0.85rem;
+  font-weight: 600;
+  cursor: pointer;
+  transition: var(--transicao);
+}
+
+.admin-acoes button:first-child:hover {
+  border-color: var(--cor-primaria);
+  color: var(--cor-primaria);
+}
+
+.admin-acoes button:nth-child(2):hover {
+  border-color: var(--cor-acento);
+  color: #ca8a04;
+}
+
+.btn-excluir {
+  color: #dc2626;
+}
+
+.btn-excluir:hover {
+  background: #dc2626 !important;
+  color: white !important;
+  border-color: #dc2626 !important;
+}
+
+.admin-carregando {
+  text-align: center;
+  padding: 60px;
+  font-size: 1.1rem;
+  color: var(--cor-texto-suave);
+}
