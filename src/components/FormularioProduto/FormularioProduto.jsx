@@ -1,5 +1,5 @@
 import { useState } from 'react'
-import { criarProduto, atualizarProduto } from '../../services/produtoService'
+import { criarProduto, atualizarProduto } from '../../services/ProdutoService'
 import './FormularioProduto.css'
 
 function FormularioProduto({ produto, aoFechar }) {
