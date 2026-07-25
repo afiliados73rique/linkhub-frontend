@@ -1,6 +1,6 @@
 import './ProdutoList.css'
 import { useState, useEffect } from "react";
-import { buscarProdutosAtivos } from "../../services/ProdutoService";
+import { buscarProdutosAtivos } from "../../services/produtoService";
 
 
 function ProdutosList() {
