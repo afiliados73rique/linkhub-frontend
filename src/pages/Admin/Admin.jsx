@@ -1,5 +1,5 @@
 import { useState, useEffect } from 'react'
-import { listarTodos, inativarProduto, reativarProduto, excluirProduto } from '../../services/produtoService'
+import { listarTodos, inativarProduto, reativarProduto, excluirProduto } from '../../services/produto-api'
 import FormularioProduto from '../../components/FormularioProduto/FormularioProduto'
 import './Admin.css'
 
