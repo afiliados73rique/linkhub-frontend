@@ -1,42 +1,55 @@
 .platform-banner {
-  background: var(--cor-texto);
+  background: linear-gradient(135deg, #0f172a 0%, #1e3a8a 100%);
   color: white;
   text-align: center;
-  border-radius: var(--raio-borda);
-  margin: 0 8%;
-  padding: 60px 40px;
+  padding: 56px 8%;
 }
 
 .platform-banner h2 {
   font-size: 1.8rem;
-  margin-bottom: 32px;
+  margin-bottom: 12px;
 }
 
-.plataformas-lista {
-  display: flex;
-  justify-content: center;
-  gap: 24px;
-  flex-wrap: wrap;
+.platform-banner p {
+  color: rgba(255, 255, 255, 0.75);
+  max-width: 480px;
+  margin: 0 auto 32px;
 }
 
-.plataforma-item {
+.plataformas-lista{
+    display:flex;
+    justify-content:center;
+    align-items:center;
+    gap:24px;
+    flex-wrap:wrap;
+}
+
+.plataforma-botao {
   display: flex;
   align-items: center;
+  justify-content: center;
   gap: 12px;
-  background: rgba(255, 255, 255, 0.08);
-  padding: 16px 28px;
-  border-radius: var(--raio-borda-pequeno);
-  border: 1px solid transparent;
+
+  background: white;
+  color: var(--cor-texto);
+
+  padding: 12px 24px;      /* antes 14px 32px */
+  border-radius: 28px;     /* antes 50px */
+
+  font-weight: 700;
+  text-decoration: none;
+
+  border: 2px solid var(--cor-acento);
   transition: var(--transicao);
 }
 
-.plataforma-item:hover {
-  background: rgba(250, 204, 21, 0.1);
-  border-color: var(--cor-acento);
-  transform: translateY(-4px);
+.plataforma-botao img {
+  width: 80px;             /* aumente conforme necessário */
+  height: auto;
+  object-fit: contain;
 }
 
-.plataforma-item img {
-  width: 28px;
-  height: 28px;
+.plataforma-botao:hover {
+  transform: translateY(-3px) scale(1.03);
+  box-shadow: var(--sombra-media);
 }

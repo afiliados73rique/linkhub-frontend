@@ -35,8 +35,8 @@
 }
 
 .login-form input {
-  padding: 12px 14px;
-  border: 1px solid var(--cor-borda);
+    padding: 12px 14px;
+  border: 2px solid var(--cor-primaria-clara);
   border-radius: var(--raio-borda-pequeno);
   margin-bottom: 20px;
   font-size: 1rem;
@@ -46,7 +46,7 @@
 .login-form input:focus {
   outline: none;
   border-color: var(--cor-primaria);
-  box-shadow: 0 0 0 3px rgba(30, 64, 175, 0.1);
+  box-shadow: 0 0 0 4px rgba(30, 64, 175, 0.15);
 }
 
 .login-form button {

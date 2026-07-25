@@ -74,31 +74,33 @@ function Admin() {
             <th>Ações</th>
           </tr>
         </thead>
-        <tbody>
-          {produtos.map((produto) => (
-            <tr key={produto.id}>
-              <td><img src={produto.imagem} alt={produto.nome} className="admin-thumb" /></td>
-              <td>{produto.nome}</td>
-              <td>
-                {produto.preco.toLocaleString('pt-BR', { style: 'currency', currency: 'BRL' })}
-              </td>
-              <td>
-                <span className={produto.ofertaAtiva ? 'status-ativo' : 'status-inativo'}>
-                  {produto.ofertaAtiva ? 'Ativo' : 'Inativo'}
-                </span>
-              </td>
-              <td className="admin-acoes">
-  <button onClick={() => abrirEdicao(produto)}>Editar</button>
-  <button onClick={() => handleToggleStatus(produto)}>
-    {produto.ofertaAtiva ? 'Inativar' : 'Reativar'}
-  </button>
-  <button className="btn-excluir" onClick={() => handleExcluir(produto.id)}>
-    Excluir
-  </button>
-</td>
-            </tr>
-          ))}
-        </tbody>
+      <tbody>
+  {produtos.map((produto) => (
+    <tr key={produto.id}>
+      <td data-label="Imagem">
+        <img src={produto.imagem} alt={produto.nome} className="admin-thumb" />
+      </td>
+      <td data-label="Nome">{produto.nome}</td>
+      <td data-label="Preço">
+        {produto.preco.toLocaleString('pt-BR', { style: 'currency', currency: 'BRL' })}
+      </td>
+      <td data-label="Status">
+        <span className={produto.ofertaAtiva ? 'status-ativo' : 'status-inativo'}>
+          {produto.ofertaAtiva ? 'Ativo' : 'Inativo'}
+        </span>
+      </td>
+      <td data-label="Ações" className="admin-acoes">
+        <button onClick={() => abrirEdicao(produto)}>Editar</button>
+        <button onClick={() => handleToggleStatus(produto)}>
+          {produto.ofertaAtiva ? 'Inativar' : 'Reativar'}
+        </button>
+        <button className="btn-excluir" onClick={() => handleExcluir(produto.id)}>
+          Excluir
+        </button>
+      </td>
+    </tr>
+  ))}
+</tbody>
       </table>
 
       {mostrarForm && (

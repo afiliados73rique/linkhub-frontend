@@ -40,7 +40,7 @@
 .modal-form input,
 .modal-form textarea {
   padding: 10px 14px;
-  border: 1px solid var(--cor-borda);
+  border: 2px solid var(--cor-primaria-clara);
   border-radius: var(--raio-borda-pequeno);
   font-size: 0.95rem;
   font-family: inherit;

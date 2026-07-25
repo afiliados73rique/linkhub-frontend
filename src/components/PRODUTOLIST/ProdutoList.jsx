@@ -27,6 +27,7 @@ function ProdutosList() {
 
     return (
         <section id="produtos" className="produtos">
+             <div className="container"></div>
             <h2>Produtos em destaque</h2>
 
             {carregando && <p>Carregando produtos...</p>}

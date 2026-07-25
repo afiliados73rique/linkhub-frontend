@@ -3,8 +3,9 @@ import "./Footer.css";
 function Footer() {
   return (
     <footer id="contato" className="footer">
+       <div className="container footer-inner"></div>
       <div className="footer-logo">LinkHub</div>
-      <p>LinkHub conecta você aos melhores produtos com praticidade e confiança.</p>
+      <p>Selecionamos produtos de qualidade para que você encontre as melhores opções em um só lugar.</p>
 
       <div className="footer-links">
         <div>
@@ -14,7 +15,7 @@ function Footer() {
         </div>
         <div>
           <h4>Contato</h4>
-          <p>seuemail@exemplo.com</p>
+          <p>afiliados.73rique@gmail.com</p>
         </div>
       </div>
 
