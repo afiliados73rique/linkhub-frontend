@@ -1,16 +1,104 @@
-# React + Vite
+# 🚀 LinkHub - Frontend
 
-This template provides a minimal setup to get React working in Vite with HMR and some ESLint rules.
+O **LinkHub** é uma plataforma desenvolvida para facilitar o gerenciamento e compartilhamento de links personalizados, permitindo que usuários organizem seus conteúdos em uma única página, semelhante ao Linktree, porém com recursos próprios e uma interface moderna.
 
-Currently, two official plugins are available:
+Este repositório contém o **frontend** da aplicação, desenvolvido com **React**, responsável pela interface do usuário e comunicação com a API.
 
-- [@vitejs/plugin-react](https://github.com/vitejs/vite-plugin-react/blob/main/packages/plugin-react) uses [Oxc](https://oxc.rs)
-- [@vitejs/plugin-react-swc](https://github.com/vitejs/vite-plugin-react/blob/main/packages/plugin-react-swc) uses [SWC](https://swc.rs/)
+---
 
-## React Compiler
+## 📸 Demonstração
 
-The React Compiler is not enabled on this template because of its impact on dev & build performances. To add it, see [this documentation](https://react.dev/learn/react-compiler/installation).
+<img width="1902" height="930" alt="image" src="https://github.com/user-attachments/assets/b4683e42-6472-4184-9270-2e372c7c64a4" />
 
-## Expanding the ESLint configuration
+---
 
-If you are developing a production application, we recommend using TypeScript with type-aware lint rules enabled. Check out the [TS template](https://github.com/vitejs/vite/tree/main/packages/create-vite/template-react-ts) for information on how to integrate TypeScript and [`typescript-eslint`](https://typescript-eslint.io) in your project.
+## ✨ Funcionalidades
+
+- 🔐 Autenticação de usuários
+- 👤 Cadastro e login
+- 📋 Dashboard de gerenciamento
+- ➕ Cadastro de links
+- ✏️ Edição de links
+- 🗑️ Exclusão de links
+- 📱 Interface responsiva
+- 🎨 Layout moderno
+- 🔗 Integração com a API do LinkHub
+
+---
+
+## 🛠️ Tecnologias Utilizadas
+
+- React
+- React Router DOM
+- Axios
+- Vite
+- CSS3
+- JavaScript (ES6+)
+
+---
+
+## 📂 Estrutura do Projeto
+
+```
+src/
+│
+├── assets/
+├── components/
+├── pages/
+├── services/
+├── hooks/
+├── context/
+├── routes/
+├── styles/
+├── App.jsx
+└── main.jsx
+```
+
+---
+
+
+
+
+## 🚀 Deploy
+
+O frontend está hospedado na **Vercel**.
+
+Produção:
+
+```
+https://linkhub-afiliado.com.br
+```
+
+---
+
+## 📱 Responsividade
+
+A aplicação foi desenvolvida para funcionar em:
+
+- Desktop
+- Tablets
+- Smartphones
+
+---
+
+## 📌 Objetivo
+
+O LinkHub foi desenvolvido com o objetivo de oferecer uma solução simples, rápida e intuitiva para centralização de links pessoais, profissionais ou comerciais em uma única página personalizada.
+
+---
+
+## 👨‍💻 Equipe
+
+Projeto desenvolvido por:
+
+- Nicolly Meireles
+- Millena Meireles
+
+---
+
+## 📄 Licença
+
+todos os direitos estão reservados 
+
+```
+
